@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using CustomerLibrary;
+using FactoryCustomer;
+using ICustomerInterface;
 
 namespace CustomerUI
 {
@@ -28,20 +18,15 @@ namespace CustomerUI
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            CustomerBase customerBase = null;
-            if (CboCustomerType.SelectedIndex == 0)
-            {
-                customerBase = new Lead();
-            }
-            else
-            {
-                customerBase= new Customer();
-            }
-            customerBase.CustomerName = TxtCustomerName.Text;
-            customerBase.Address = TextBoxAddress.Text;
-            customerBase.PhoneNumber = TextBoxPhoneNumber.Text;
-            customerBase.BillDate = Convert.ToDateTime(TxtBillDate.Text);
-            customerBase.BillAmount = Convert.ToDecimal(TextBoxBillAmount.Text);
+            ICustomer _customer = null;
+            Factory obj = new Factory();
+            _customer = obj.CreateCustomer((CustomerType)CboCustomerType.SelectedIndex);
+
+            _customer.CustomerName = TxtCustomerName.Text;
+            _customer.Address = TextBoxAddress.Text;
+            _customer.PhoneNumber = TextBoxPhoneNumber.Text;
+            _customer.BillDate = Convert.ToDateTime(TxtBillDate.Text);
+            _customer.BillAmount = Convert.ToDecimal(TextBoxBillAmount.Text);
         }
     }
 }

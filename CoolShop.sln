@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerUI", "CustomerUI\Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{309070F8-AA5A-4D2C-9693-518456C12825}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICustomerInterface", "ICustomerInterface\ICustomerInterface.csproj", "{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryCustomer", "FactoryCustomer\FactoryCustomer.csproj", "{E4E881ED-F81F-412E-84BA-22B685C2087F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{309070F8-AA5A-4D2C-9693-518456C12825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309070F8-AA5A-4D2C-9693-518456C12825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309070F8-AA5A-4D2C-9693-518456C12825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E881ED-F81F-412E-84BA-22B685C2087F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E881ED-F81F-412E-84BA-22B685C2087F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E881ED-F81F-412E-84BA-22B685C2087F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E881ED-F81F-412E-84BA-22B685C2087F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

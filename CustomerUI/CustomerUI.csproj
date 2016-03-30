@@ -105,6 +105,14 @@
       <Project>{7966258E-DD6B-4DE3-8AEA-F6416F5AA6A3}</Project>
       <Name>CustomerLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FactoryCustomer\FactoryCustomer.csproj">
+      <Project>{E4E881ED-F81F-412E-84BA-22B685C2087F}</Project>
+      <Name>FactoryCustomer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICustomerInterface\ICustomerInterface.csproj">
+      <Project>{BCAB75A4-9B7B-4032-88DD-E93671E0DB01}</Project>
+      <Name>ICustomerInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
