@@ -15,6 +15,10 @@ namespace CustomerLibrary
         public DateTime BillDate { get; set; }
         public string Address { get; set; }
         public virtual void Validate() { }
+        public ICustomer Clone()
+        {
+            return (ICustomer) MemberwiseClone();
+        }
     }
 
     public class Customer: CustomerBase

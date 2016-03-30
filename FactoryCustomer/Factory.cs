@@ -27,7 +27,7 @@ namespace FactoryCustomer
         }
         public static ICustomer CreateCustomer(CustomerType customerType)
         {
-            return CustomersList.Value[(int)customerType];
+            return CustomersList.Value[(int)customerType].Clone();
         }
     }
 }
