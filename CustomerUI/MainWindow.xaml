@@ -1,0 +1,49 @@
+﻿<Window x:Class="CustomerUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+                Title="Customer" Height="400" Width="600"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{StaticResource MaterialDesignFont}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                    <Label x:Name="LblCustomerType" Content="Customer Type" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                    <ComboBox x:Name="CboCustomerType" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="LabelBillAmount" Content="Bill Amount" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                    <TextBox x:Name="TextBoxBillAmount" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label x:Name="LblCustomerName" Content="Customer name" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                <TextBox x:Name="TxtCustomerName" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="LblBillDate" Content="Bill Date" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                <TextBox x:Name="TxtBillDate" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </StackPanel> 
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label x:Name="LabelPhoneNumber" Content="Phone Number" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                <TextBox x:Name="TextBoxPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="LabelAddress" Content="Address" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="105"/>
+                <TextBox x:Name="TextBoxAddress" HorizontalAlignment="Left" Height="23" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Button Name="BtnAdd" Margin="5,0,0,0" Width="100" Click="BtnAdd_Click">Add</Button>
+                <Button Name="BtnUpdate" Margin="5,0,0,0" Width="100">Update</Button>
+                <Button Name="BtnDelete" Margin="5,0,0,0" Width="100">Delete</Button>
+                <Button Name="BtnCancel" Margin="5,0,0,0" Width="100">Cancel</Button>
+            </StackPanel>
+
+            <StackPanel Margin="0,10,0,0">
+                <DataGrid x:Name="dataGrid1" BorderBrush="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Left" Margin="5,0,0,0"  Width="400"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
