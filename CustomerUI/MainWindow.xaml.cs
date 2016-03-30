@@ -19,8 +19,7 @@ namespace CustomerUI
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
             ICustomer _customer = null;
-            Factory obj = new Factory();
-            _customer = obj.CreateCustomer((CustomerType)CboCustomerType.SelectedIndex);
+            Factory.CreateCustomer((CustomerType)CboCustomerType.SelectedIndex);
 
             _customer.CustomerName = TxtCustomerName.Text;
             _customer.Address = TextBoxAddress.Text;
